@@ -6,6 +6,8 @@ class Pro_player {
     public string Name {get;set;}
 
     public DateTime StartDate {get;set;}
+    
+    public Game Game {get;set;}
 
 }
 

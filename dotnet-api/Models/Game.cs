@@ -2,13 +2,17 @@ namespace dotnet_api.Models{
 
 class Game{
   
-public static int Id {get;set;}
+public  int Id {get;set;}
 
-public static string Title {get;set;}
+public  string Title {get;set;}
 
-public static DateTime ReleaseDate {get;set;}
+public  DateTime ReleaseDate {get;set;}
 
-public static Studio Studio {get;set;}
+public  Studio Studio {get;set;}
+
+public  ICollection<Pro_player> Pro_Players {get;set;}
+
+public  ICollection<GamePlatform> Platforms {get;set;}
 
 }
 

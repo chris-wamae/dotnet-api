@@ -1,6 +1,6 @@
 namespace dotnet_api.Models{
   
-  class Platform{
+ public class Platform{
     
     public  int Id {get;set;}
 
@@ -8,7 +8,7 @@ namespace dotnet_api.Models{
 
     public  DateTime CreationTime {get;set;}
 
-    public ICollection<GamePlatform> Games {get;set;}
+    public ICollection<GamePlatform> GamePlatforms {get;set;}
 
   }
 

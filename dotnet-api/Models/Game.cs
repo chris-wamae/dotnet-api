@@ -1,6 +1,6 @@
 namespace dotnet_api.Models{
 
-class Game{
+public class Game{
   
 public  int Id {get;set;}
 
@@ -12,7 +12,7 @@ public  Studio Studio {get;set;}
 
 public  ICollection<Pro_player> Pro_Players {get;set;}
 
-public  ICollection<GamePlatform> Platforms {get;set;}
+public  ICollection<GamePlatform> GamePlatforms {get;set;}
 
 }
 

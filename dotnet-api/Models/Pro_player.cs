@@ -1,6 +1,6 @@
 namespace dotnet_api.Models{
 
-class Pro_player {
+public class Pro_player {
     public int Id {get;set;}
 
     public string Name {get;set;}

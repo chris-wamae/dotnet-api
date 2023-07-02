@@ -1,6 +1,6 @@
 namespace dotnet_api.Models{
 
-    class GamePlatform {
+ public class GamePlatform {
       
      public int GameId {get;set;}
 

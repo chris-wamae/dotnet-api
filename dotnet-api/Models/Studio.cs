@@ -1,6 +1,6 @@
 namespace dotnet_api.Models {
  
-  class Studio {
+ public class Studio {
     
    public int Id {get;set;}
 

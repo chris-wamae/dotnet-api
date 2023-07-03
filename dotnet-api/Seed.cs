@@ -38,15 +38,11 @@ namespace dotnet_api
                             CreationDay = new DateTime(1990,3,3)
                            }
                         },
-                        Owner = new Owner()
+
+                        Platform = new Platform()
                         {
-                            FirstName = "Jack",
-                            LastName = "London",
-                            Gym = "Brocks Gym",
-                            Country = new Country()
-                            {
-                                Name = "Kanto"
-                            }
+                         Name = "Play station",
+                         CreationTime = new DateTime(1993,9,11)
                         }
                     }
                     };

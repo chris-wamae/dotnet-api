@@ -1,6 +1,8 @@
 using dotnet_api;
 using dotnet_api.Data;
 using Microsoft.EntityFrameworkCore;
+using dotnet_api.Repository;
+using dotnet_api.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<Seed>();
+builder.Services.AddScoped<IGameRepository, GameRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

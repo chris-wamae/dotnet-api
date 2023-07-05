@@ -85,3 +85,10 @@ C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\refint\dotnet-
 C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api.pdb
 C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api.genruntimeconfig.cache
 C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\ref\dotnet-api.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

@@ -92,3 +92,5 @@ C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Web
 C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

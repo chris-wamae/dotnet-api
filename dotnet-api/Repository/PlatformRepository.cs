@@ -21,12 +21,12 @@ namespace dotnet_api.Repository
         return _context.Platforms.Any(p => p.Id == platformId);
     }
 
-    public Platform GetPlatform(int platformId)
+    public Platform GetPlatformById(int platformId)
     {
         return _context.Platforms.Where(p => p.Id == platformId).FirstOrDefault();
     }
 
-    public Platform GetPlatform(string platformName)
+    public Platform GetPlatformByName(string platformName)
      {
         return _context.Platforms.Where(p => p.Name == platformName).FirstOrDefault();
      }

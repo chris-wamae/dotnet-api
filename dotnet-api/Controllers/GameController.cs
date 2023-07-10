@@ -53,7 +53,5 @@ namespace dotnet_api.Controllers
 
         }
 
-        //[HttpGet("{}")]
-
     }
 }

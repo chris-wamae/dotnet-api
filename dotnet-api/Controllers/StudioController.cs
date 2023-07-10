@@ -14,9 +14,9 @@ namespace dotnet_api.Controllers
     private readonly IStudioRepository _studioRepository;
     private readonly IMapper _mapper;
 
-    public StudioController(IStudioRepository gameRepository, IMapper mapper)
+    public StudioController(IStudioRepository studioRepository, IMapper mapper)
     {
-        _studioRepository = gameRepository;
+        _studioRepository = studioRepository;
         _mapper = mapper;
     }
 
@@ -35,7 +35,7 @@ namespace dotnet_api.Controllers
     }
 
     
-    [HttpGet]
+    [HttpGet("{studioId}")]
     [ProducesResponseType(200, Type  = typeof(Studio))]
     [ProducesResponseType(400)]
     public IActionResult GetStudioById(int studioId)

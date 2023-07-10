@@ -1,6 +1,6 @@
 using dotnet_api.Models;
 
-namespace dotnet_api.Repository
+namespace dotnet_api.Interfaces
 {
 
     public interface IStudioRepository

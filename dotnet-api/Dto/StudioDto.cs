@@ -7,6 +7,6 @@ namespace dotnet_api.Dto
         public string Name {get; set;}
 
         public DateTime CreationDay {get;set;}
-
+        
     }
 }

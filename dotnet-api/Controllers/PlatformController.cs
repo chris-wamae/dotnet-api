@@ -53,6 +53,20 @@ namespace dotnet_api.Controllers
 
         }
 
+        [HttpGet("game/{platformId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Game>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetGamesByPlatform(int platformId) 
+        { 
+         var games = _mapper.Map<List<GameDto>>(_platformRepository.GetGamesByPlatform(platformId));
+
+        if(!ModelState.IsValid)
+        return BadRequest(ModelState);
+
+        return Ok(games);
+
+        }
+
 
 
     }

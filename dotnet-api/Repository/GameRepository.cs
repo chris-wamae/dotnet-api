@@ -32,5 +32,10 @@ namespace dotnet_api.Repository
         {
             return _context.Games.OrderBy(p => p.Id).ToList();
         }
+
+        public ICollection<Platform> GetPlatformsByGame(int gameId)
+        {
+            return _context.GamePlatforms.Where(g => g.GameId == gameId).Select(g => g.Platform).ToList();
+        }
     }
 }

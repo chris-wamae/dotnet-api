@@ -10,6 +10,7 @@ namespace dotnet_api.Interfaces
 
         bool GameExists(int gameId);
 
+        ICollection<Platform> GetPlatformsByGame(int gameId);
 
     }
 }

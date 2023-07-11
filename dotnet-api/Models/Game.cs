@@ -1,19 +1,21 @@
-namespace dotnet_api.Models{
+namespace dotnet_api.Models
+{
 
-public class Game{
-  
-public  int Id {get;set;}
+    public class Game
+    {
 
-public  string Title {get;set;}
+        public int Id { get; set; }
 
-public  DateTime ReleaseDate {get;set;}
+        public string Title { get; set; }
 
-public  Studio Studio {get;set;}
+        public DateTime ReleaseDate { get; set; }
 
-public  ICollection<Pro_player> Pro_Players {get;set;}
+        public Studio Studio { get; set; }
 
-public  ICollection<GamePlatform> GamePlatforms {get;set;}
+        public ICollection<Pro_player> Pro_Players { get; set; }
 
-}
+        public ICollection<GamePlatform> GamePlatforms { get; set; }
+
+    }
 
 }

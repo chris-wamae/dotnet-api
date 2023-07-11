@@ -8,14 +8,14 @@ namespace dotnet_api.Repository
     {
         private readonly DataContext _context;
 
-        public GameRepository(DataContext context) 
-        { 
-           _context = context;
+        public GameRepository(DataContext context)
+        {
+            _context = context;
         }
 
         public bool GameExists(int gameId)
         {
-            return _context.Games.Any(g  => g.Id == gameId);
+            return _context.Games.Any(g => g.Id == gameId);
         }
 
         public Game GetGame(int id)

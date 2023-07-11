@@ -1,14 +1,16 @@
-namespace dotnet_api.Models{
+namespace dotnet_api.Models
+{
 
- public class GamePlatform {
-      
-     public int GameId {get;set;}
+    public class GamePlatform
+    {
 
-     public int PlatformId {get;set;}
+        public int GameId { get; set; }
 
-     public Game Game {get;set;}
+        public int PlatformId { get; set; }
 
-     public Platform Platform {get;set;}
+        public Game Game { get; set; }
+
+        public Platform Platform { get; set; }
 
     }
 }

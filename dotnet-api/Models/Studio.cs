@@ -1,15 +1,17 @@
-namespace dotnet_api.Models {
- 
- public class Studio {
-    
-   public int Id {get;set;}
+namespace dotnet_api.Models
+{
 
-   public string Name {get;set;}
+    public class Studio
+    {
 
-   public DateTime CreationDay {get;set;}
+        public int Id { get; set; }
 
-   public ICollection<Game> Games {get;set;}
+        public string Name { get; set; }
 
-  }
+        public DateTime CreationDay { get; set; }
+
+        public ICollection<Game> Games { get; set; }
+
+    }
 
 }

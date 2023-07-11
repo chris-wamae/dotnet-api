@@ -6,53 +6,53 @@ using dotnet_api.Dto;
 
 namespace dotnet_api.Controllers
 {
-  
-[Route("api/[controller]")]
-[ApiController]
 
-public class Pro_playerController : Controller
-{
-  private readonly IPro_playerRepository _proRepository;
-  private readonly IMapper _mapper;
+    [Route("api/[controller]")]
+    [ApiController]
 
-  public Pro_playerController(IPro_playerRepository proRepository, IMapper mapper)
-  {
-    _proRepository = proRepository;
-    _mapper = mapper;
-  }
+    public class Pro_playerController : Controller
+    {
+        private readonly IPro_playerRepository _proRepository;
+        private readonly IMapper _mapper;
 
-  [HttpGet]
-  [ProducesResponseType(200, Type = typeof(IEnumerable<Pro_player>))]
+        public Pro_playerController(IPro_playerRepository proRepository, IMapper mapper)
+        {
+            _proRepository = proRepository;
+            _mapper = mapper;
+        }
 
-  public IActionResult GetPros()
-  {
-    var pros = _mapper.Map <List <Pro_playerDto>>(_proRepository.GetPro_Players());
-    if(!ModelState.IsValid)
+        [HttpGet]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Pro_player>))]
 
-    return BadRequest(ModelState);
+        public IActionResult GetPros()
+        {
+            var pros = _mapper.Map<List<Pro_playerDto>>(_proRepository.GetPro_Players());
+            if (!ModelState.IsValid)
 
-    return Ok(pros);
-  }
+                return BadRequest(ModelState);
 
-
-  [HttpGet("{proId}")]
-  [ProducesResponseType(200, Type = typeof(Pro_player))]
-  [ProducesResponseType(400)]
-
-  public IActionResult GetPro_PlayerById(int proId)
-  {
-    if(!_proRepository.ProExists(proId))
-    return NotFound();
-
-    var pro = _mapper.Map<GameDto>(_proRepository.GetPro_PlayerById(proId));
-
-    if(!ModelState.IsValid)
-    return BadRequest(ModelState);
-
-    return Ok(pro);
-  }
+            return Ok(pros);
+        }
 
 
-}
+        [HttpGet("{proId}")]
+        [ProducesResponseType(200, Type = typeof(Pro_player))]
+        [ProducesResponseType(400)]
+
+        public IActionResult GetPro_PlayerById(int proId)
+        {
+            if (!_proRepository.ProExists(proId))
+                return NotFound();
+
+            var pro = _mapper.Map<GameDto>(_proRepository.GetPro_PlayerById(proId));
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(pro);
+        }
+
+
+    }
 
 }

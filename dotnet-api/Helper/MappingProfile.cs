@@ -9,6 +9,9 @@ namespace dotnet_api.Helper
         public MappingProfile()
         {
             CreateMap<Game, GameDto>();
+            CreateMap<Studio, StudioDto>();
+            CreateMap<Pro_player, Pro_playerDto>();
+            CreateMap<Platform, PlatformDto>();
         }
 
     }

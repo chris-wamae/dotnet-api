@@ -2,15 +2,15 @@
 
 namespace dotnet_api.Interfaces
 {
-   public interface IPlatformRepository 
-   {
-       ICollection<Platform> GetPlatforms();
+    public interface IPlatformRepository
+    {
+        ICollection<Platform> GetPlatforms();
 
-       Platform GetPlatformById(int platformId);
+        Platform GetPlatformById(int platformId);
 
-       Platform GetPlatformByName(string platformName);
+        Platform GetPlatformByName(string platformName);
 
-       bool PlatformExists(int id);
+        bool PlatformExists(int id);
 
-   }
+    }
 }

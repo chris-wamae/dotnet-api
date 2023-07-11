@@ -1,16 +1,18 @@
-namespace dotnet_api.Models{
-  
- public class Platform{
-    
-    public  int Id {get;set;}
+namespace dotnet_api.Models
+{
 
-    public  string Name {get;set;}
+    public class Platform
+    {
 
-    public  DateTime CreationTime {get;set;}
+        public int Id { get; set; }
 
-    public ICollection<GamePlatform> GamePlatforms {get;set;}
+        public string Name { get; set; }
 
-  }
+        public DateTime CreationTime { get; set; }
+
+        public ICollection<GamePlatform> GamePlatforms { get; set; }
+
+    }
 
 
 }

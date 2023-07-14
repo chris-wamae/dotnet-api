@@ -9,6 +9,11 @@ namespace dotnet_api.Interfaces
         Studio GetStudioById(int Id);
         Studio GetStudioByName(string name);
         bool StudioExists(int Id);
+        bool CreateStudio(Studio studio);
+
+        bool Save();
+
+        
     }
 }
 

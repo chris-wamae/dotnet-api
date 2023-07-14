@@ -51,6 +51,43 @@ namespace dotnet_api.Controllers
             return Ok(studio);
         }
 
+
+        [HttpPost]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+
+        public IActionResult CreateStudio([FromBody] StudioDto studioCreate)
+        {
+            if (studioCreate == null)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var studio = _studioRepository.GetStudios().Where(s => s.Name.Trim().ToUpper() == studioCreate.Name.Trim().ToUpper())
+            .FirstOrDefault();
+
+            if (studio != null)
+            {
+                ModelState.AddModelError("", "This studio already exits");
+                return StatusCode(422, ModelState);
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var studioMap = _mapper.Map<Studio>(studioCreate);
+
+            if (!_studioRepository.CreateStudio(studioMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok(studio);
+            }
+
     }
 
 

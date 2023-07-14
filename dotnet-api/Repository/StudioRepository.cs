@@ -37,6 +37,19 @@ namespace dotnet_api.Repository
 
         }
 
+        public bool CreateStudio(Studio studio)
+        {
+         _context.Add(studio);
+            return Save();      
+        }
+
+        public bool Save()
+        {
+           var saved = _context.SaveChanges();
+
+            return saved > 0 ? true : false; 
+            
+        }
     }
 
 }

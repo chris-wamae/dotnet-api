@@ -12,6 +12,7 @@ namespace dotnet_api.Helper
             CreateMap<Studio, StudioDto>();
             CreateMap<Pro_player, Pro_playerDto>();
             CreateMap<Platform, PlatformDto>();
+            CreateMap<StudioDto, Studio>();
         }
 
     }

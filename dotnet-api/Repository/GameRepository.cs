@@ -13,6 +13,21 @@ namespace dotnet_api.Repository
             _context = context;
         }
 
+        //public bool CreateGame(int platformId, Game game)
+        //{
+        //    var gamePlatformEntity = _context.Platforms.Where(p => p.Id == platformId).FirstOrDefault();
+
+        //    var gamePlatform = new GamePlatform()
+        //    {
+        //        Platform = gamePlatformEntity,
+        //        Game = game,
+        //    };
+
+        //    _context.Add(gamePlatform);
+        //    _context.Add(game);           
+
+        //}
+
         public bool GameExists(int gameId)
         {
             return _context.Games.Any(g => g.Id == gameId);
@@ -37,5 +52,12 @@ namespace dotnet_api.Repository
         {
             return _context.GamePlatforms.Where(g => g.GameId == gameId).Select(g => g.Platform).ToList();
         }
+
+        //public bool Save()
+        //{
+        //    var saved = _context.SaveChanges();
+
+        //    return saved > 0 ? true : false;
+        //}
     }
 }

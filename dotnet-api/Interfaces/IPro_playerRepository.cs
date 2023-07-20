@@ -10,6 +10,10 @@ namespace dotnet_api.Interfaces
         Pro_player GetPro_PlayerByName(string name);
         bool ProExists(int proId);
 
+        bool CreatePro_player(Pro_player pro_playerCreate);
+
+        bool Save();
+
     }
 
 }

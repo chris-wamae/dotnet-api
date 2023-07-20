@@ -85,7 +85,7 @@ namespace dotnet_api.Controllers
                 return StatusCode(500, ModelState);
             }
 
-            return Ok(studio);
+            return Ok(studioMap);
             }
 
     }

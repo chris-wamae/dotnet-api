@@ -67,6 +67,39 @@ namespace dotnet_api.Controllers
 
         }
 
+        [HttpPost]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+
+        public IActionResult CreatePlatform([FromBody] Platform platformCreate)
+        {    
+            if(platformCreate == null)
+            return BadRequest(ModelState);
+
+            var platform = _platformRepository.GetPlatforms().Where(p => p.Name.Trim().ToUpper() == platformCreate.Name.Trim().ToUpper()); 
+
+            if(platform != null)
+            {
+                ModelState.AddModelError("", "This Platorm already exists");
+                return StatusCode(422, ModelState);
+            }
+
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+
+            var platformMap = _mapper.Map<Platform>(platformCreate);
+
+            if(!_platformRepository.CreatePlatform(platformMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok(platformCreate);
+        }
+
 
 
     }

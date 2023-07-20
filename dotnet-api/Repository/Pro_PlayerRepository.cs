@@ -7,7 +7,7 @@ namespace dotnet_api.Repository
 
     public class Pro_playerRepository : IPro_playerRepository
     {
-        private readonly DataContext _context;
+        private readonly DataContext _context; 
 
         public Pro_playerRepository(DataContext context)
         {
@@ -34,6 +34,20 @@ namespace dotnet_api.Repository
             return _context.Pros.OrderBy(pr => pr.Id).ToList();
         }
 
+     
+
+        public bool Save()
+        {
+            var saved = _context.SaveChanges();
+
+            return saved > 0 ? true : false;
+        }
+
+        public bool CreatePro_player(Pro_player pro_playerCreate)
+        {
+            _context.Add(pro_playerCreate);
+            return Save();
+        }
     }
 
 

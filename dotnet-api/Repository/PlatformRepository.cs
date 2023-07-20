@@ -1,6 +1,7 @@
 ﻿using dotnet_api.Data;
 using dotnet_api.Interfaces;
 using dotnet_api.Models;
+using System.Reflection.Metadata.Ecma335;
 
 namespace dotnet_api.Repository
 {
@@ -40,6 +41,18 @@ namespace dotnet_api.Repository
         public ICollection<Game> GetGamesByPlatform(int platformId)
         {
             return _context.GamePlatforms.Where(p => p.PlatformId == platformId).Select(p => p.Game).ToList();
+        }
+
+        public bool CreatePlatform(Platform platform)
+        {
+            _context.Add(platform);
+            return Save();
+        }
+
+        public bool Save()
+        {
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
         }
     }
 }

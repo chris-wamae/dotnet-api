@@ -88,6 +88,41 @@ namespace dotnet_api.Controllers
             return Ok(studioMap);
             }
 
+        [HttpPut("{studioId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+
+        public IActionResult UpdateStudio(int studioId, [FromBody] StudioDto updatedStudio) 
+        {
+         if(updatedStudio == null)
+          {
+                return BadRequest(ModelState);
+          }
+
+         if(studioId != updatedStudio.Id)
+          { return BadRequest(ModelState); }
+         if(!_studioRepository.StudioExists(studioId))
+            {
+                return NotFound();
+            }
+         if(!ModelState.IsValid) 
+            {
+                return BadRequest();
+            }
+
+         var studioMap = _mapper.Map<Studio>(updatedStudio);
+
+        if (!_studioRepository.UpdateStudio(studioMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while updating the Studio");
+                return StatusCode(500, ModelState);
+            }    
+
+        return Ok(studioMap);
+
+        }
+
     }
 
 

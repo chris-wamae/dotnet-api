@@ -10,6 +10,7 @@ namespace dotnet_api.Interfaces
         Studio GetStudioByName(string name);
         bool StudioExists(int Id);
         bool CreateStudio(Studio studio);
+        bool UpdateStudio(Studio studio); 
 
         bool Save();
 

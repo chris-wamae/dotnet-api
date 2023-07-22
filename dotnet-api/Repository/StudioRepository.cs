@@ -43,6 +43,13 @@ namespace dotnet_api.Repository
             return Save();      
         }
 
+
+        public bool UpdateStudio(Studio studio)
+        {
+            _context.Update(studio);
+            return Save();
+        }
+
         public bool Save()
         {
            var saved = _context.SaveChanges();

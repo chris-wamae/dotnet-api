@@ -13,11 +13,12 @@ namespace dotnet_api.Controllers
     {
         private readonly IGameRepository _gameRepository;
         private readonly IMapper _mapper;
-
-        public GameController(IGameRepository gameRepository, IMapper mapper)
+        private readonly IPlatformRepository _platformRepository;
+        public GameController(IGameRepository gameRepository, IMapper mapper, IPlatformRepository platform)
         {
             _gameRepository = gameRepository;
             _mapper = mapper;
+            _platformRepository = platform; 
         }
 
         [HttpGet]
@@ -64,6 +65,40 @@ namespace dotnet_api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
             return Ok(platforms);
+        }
+
+
+        [HttpPost]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+
+        public IActionResult CreateGame([FromQuery] int studioId, [FromQuery] int platformId, GameDto gameCreate)
+        {
+          if(gameCreate == null)
+            return BadRequest(ModelState);
+
+          var game = _gameRepository.GetGames().Where(g => g.Title.Trim().ToUpper() == gameCreate.Title.Trim().ToUpper()).FirstOrDefault();
+
+          if(game != null)
+            {
+                ModelState.AddModelError("", "Error, this game already exists");
+                return StatusCode(422, ModelState);
+            }
+
+          if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+        
+        var gameMap = _mapper.Map<Game>(gameCreate);
+
+         if(!_gameRepository.CreateGame(studioId,platformId,gameMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+                return StatusCode(500, ModelState);
+            }
+
+         return Ok(gameMap);
         }
 
 

@@ -15,6 +15,9 @@ namespace dotnet_api.Interfaces
         ICollection<Game> GetGamesByPlatform(int platformId);
 
         bool CreatePlatform(Platform platform);
+
+        bool UpdatePlatform(int gameId, Platform Platform); 
+
         bool Save();
 
     }

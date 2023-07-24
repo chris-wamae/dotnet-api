@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using dotnet_api.Models;
 using AutoMapper;
 using dotnet_api.Dto;
+using dotnet_api.Repository;
 
 namespace dotnet_api.Controllers
 {
@@ -100,6 +101,42 @@ namespace dotnet_api.Controllers
             return Ok(platformCreate);
         }
 
+        [HttpPut("{platformId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+
+        public IActionResult UpdatePlatform([FromQuery] int gameId,int platformId,[FromBody] PlatformDto platformUpdate)
+        {
+          if(platformUpdate == null)
+            {
+             return BadRequest(ModelState);
+            }
+
+           if(platformId != platformUpdate.Id)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!_platformRepository.PlatformExists(platformId))
+            {
+                return NotFound();
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var platformMap = _mapper.Map<Platform>(platformUpdate);
+
+            if (!_platformRepository.UpdatePlatform(gameId,platformMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while updating the Studio");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok(platformMap);
+        }
 
 
     }

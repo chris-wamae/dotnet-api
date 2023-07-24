@@ -49,6 +49,12 @@ namespace dotnet_api.Repository
             return Save();
         }
 
+        public bool UpdatePlatform(int gameId,Platform platform) 
+        { 
+         _context.Update(platform);
+            return Save();
+        }
+
         public bool Save()
         {
             var saved = _context.SaveChanges();

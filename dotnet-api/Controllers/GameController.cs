@@ -101,6 +101,33 @@ namespace dotnet_api.Controllers
          return Ok(gameMap);
         }
 
+        [HttpPut("gameId")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
+        public IActionResult UpdateGame(int platformId,int gameId,[FromBody] GameDto updateGame) 
+        { 
+          if(updateGame  == null) 
+          return BadRequest(ModelState);
+
+            if (!_gameRepository.GameExists(gameId))
+                return NotFound();
+
+          if(gameId != updateGame.Id)
+            return BadRequest(ModelState);
+
+            var updatedGameMap = _mapper.Map<Game>(updateGame);
+
+         if(!_gameRepository.UpdateGame(platformId,gameId, updatedGameMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while updating the Studio");
+                return StatusCode(500, ModelState);
+         
+            }
+
+            return Ok(updatedGameMap);
+        }
 
     }
 }

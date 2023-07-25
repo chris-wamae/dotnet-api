@@ -67,6 +67,13 @@ namespace dotnet_api.Repository
          
         }
 
+        public bool UpdateGame(int platformId,int gameId, Game game)
+        {
+            _context.Update(game);
+
+            return Save();
+        }
+
 
         public bool Save()
         {
@@ -74,5 +81,7 @@ namespace dotnet_api.Repository
           
          return saved > 0 ? true : false;
         }
+
+
     }
 }

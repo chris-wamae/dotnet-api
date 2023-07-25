@@ -48,7 +48,7 @@ namespace dotnet_api.Controllers
             if (!_proRepository.ProExists(proId))
                 return NotFound();
 
-            var pro = _mapper.Map<GameDto>(_proRepository.GetPro_PlayerById(proId));
+            var pro = _mapper.Map<Pro_playerDto>(_proRepository.GetPro_PlayerById(proId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -90,6 +90,47 @@ namespace dotnet_api.Controllers
 
         }
 
+        //To fix:
+        //Not Updating but not thowing an error....
+        [HttpPut("{proId}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
+        public IActionResult UpdatePro_player(int proId, [FromBody] Pro_playerDto updatePro)
+        {
+         if(updatePro == null) 
+            {
+                return BadRequest(ModelState);
+            }
+
+         if(proId != updatePro.Id)
+            {
+                return BadRequest(ModelState);
+            }
+
+
+         if(!_proRepository.ProExists(proId))
+            {
+                return NotFound();
+            }
+
+         if(!ModelState.IsValid) 
+            {
+                return BadRequest();
+            }
+
+            var updatedProMap = _mapper.Map<Pro_player>(updatePro);
+
+        if(!_proRepository.UpdatePro_Player(updatedProMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while updating the Studio");
+                return StatusCode(500, ModelState);
+            }
+
+        return Ok(updatedProMap);
+
+        }
 
 
     }

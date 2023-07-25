@@ -16,7 +16,7 @@ namespace dotnet_api.Repository
 
         public bool ProExists(int proId)
         {
-            return _context.Pros.Any(pr => pr.Id == proId);
+          return _context.Pros.Any(p => p.Id == proId);
         }
 
         public Pro_player GetPro_PlayerById(int proId)
@@ -34,7 +34,12 @@ namespace dotnet_api.Repository
             return _context.Pros.OrderBy(pr => pr.Id).ToList();
         }
 
-     
+        public bool CreatePro_player(Pro_player pro_playerCreate)
+        {
+            _context.Add(pro_playerCreate);
+            return Save();
+        }
+
 
         public bool Save()
         {
@@ -43,11 +48,12 @@ namespace dotnet_api.Repository
             return saved > 0 ? true : false;
         }
 
-        public bool CreatePro_player(Pro_player pro_playerCreate)
+        public bool UpdatePro_Player(Pro_player pro_playerUpdate) 
         {
-            _context.Add(pro_playerCreate);
+            _context.Update(pro_playerUpdate);
             return Save();
         }
+   
     }
 
 

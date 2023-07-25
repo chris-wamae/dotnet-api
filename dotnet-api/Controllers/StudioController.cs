@@ -101,7 +101,9 @@ namespace dotnet_api.Controllers
           }
 
          if(studioId != updatedStudio.Id)
-          { return BadRequest(ModelState); }
+          {
+                return BadRequest(ModelState);
+          }
          if(!_studioRepository.StudioExists(studioId))
             {
                 return NotFound();
@@ -117,7 +119,9 @@ namespace dotnet_api.Controllers
             {
                 ModelState.AddModelError("", "Something went wrong while updating the Studio");
                 return StatusCode(500, ModelState);
-            }    
+            }   
+        
+
 
         return Ok(studioMap);
 

@@ -12,6 +12,8 @@ namespace dotnet_api.Interfaces
 
         bool CreatePro_player(Pro_player pro_playerCreate);
 
+        bool UpdatePro_Player(Pro_player pro_playerUpdate);
+
         bool Save();
 
     }

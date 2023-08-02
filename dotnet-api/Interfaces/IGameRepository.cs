@@ -16,6 +16,8 @@ namespace dotnet_api.Interfaces
 
         bool UpdateGame(int platformId,int gameId, Game game);
 
+        bool DeleteGame(Game game);
+
         bool Save();
 
     }

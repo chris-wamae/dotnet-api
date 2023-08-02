@@ -74,6 +74,13 @@ namespace dotnet_api.Repository
             return Save();
         }
 
+        public bool DeleteGame(Game gameToDelete) 
+        
+        {
+        _context.Remove(gameToDelete);
+         return Save();        
+        }
+
 
         public bool Save()
         {

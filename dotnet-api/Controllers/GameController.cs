@@ -129,5 +129,33 @@ namespace dotnet_api.Controllers
             return Ok(updatedGameMap);
         }
 
+        [HttpDelete("{gameId}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+
+        public IActionResult DeleteGame(int gameId)
+        {
+            if (!_gameRepository.GameExists(gameId))
+            {
+                return NotFound();
+            }
+
+            var gameToDelete = _gameRepository.GetGame(gameId);
+
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if(!_gameRepository.DeleteGame(gameToDelete))
+            {
+                ModelState.AddModelError("", "Something went wrong while Deleting the Game");
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+  
+        }
     }
 }

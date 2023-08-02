@@ -53,6 +53,13 @@ namespace dotnet_api.Repository
             _context.Update(pro_playerUpdate);
             return Save();
         }
+
+        public bool  DeletePro_Player(Pro_player proPlayerToDelete)
+        {
+            _context.Remove(proPlayerToDelete);
+
+            return Save();
+        }
    
     }
 

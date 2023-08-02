@@ -132,7 +132,40 @@ namespace dotnet_api.Controllers
 
         }
 
+        [HttpDelete("{proId}")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+
+        public IActionResult DeleteProPlayer(int proId) 
+        { 
+         if(!_proRepository.ProExists(proId))
+            {
+                return NotFound();
+            }
+         var proToDelete = _proRepository.GetPro_PlayerById(proId);
+         
+         if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+         if(!_proRepository.DeletePro_Player(proToDelete))
+            {
+
+                ModelState.AddModelError("", "Something went wrong while saving");
+
+                return StatusCode(500, ModelState);
+
+            }
+
+         return NoContent();
+
+        }
+
 
     }
+
+
 
 }

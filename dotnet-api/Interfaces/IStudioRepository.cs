@@ -12,6 +12,8 @@ namespace dotnet_api.Interfaces
         bool CreateStudio(Studio studio);
         bool UpdateStudio(Studio studio); 
 
+        bool DeleteStudio(Studio studio);
+
         bool Save();
 
         

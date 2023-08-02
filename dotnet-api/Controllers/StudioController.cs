@@ -127,6 +127,34 @@ namespace dotnet_api.Controllers
 
         }
 
+        [HttpDelete("{studioId}")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
+
+        public IActionResult DeleteStudio(int studioId)
+        {
+         if(!_studioRepository.StudioExists(studioId))
+            {
+            return NotFound();
+            }
+
+         var studioToDelete = _studioRepository.GetStudioById(studioId);
+
+         if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+         if(_studioRepository.DeleteStudio(studioToDelete))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+
+                return StatusCode(500, ModelState);
+            }
+
+         return NoContent();
+        }
+
     }
 
 

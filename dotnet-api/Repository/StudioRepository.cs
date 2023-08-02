@@ -50,6 +50,12 @@ namespace dotnet_api.Repository
             return Save();
         }
 
+        public bool DeleteStudio(Studio studio) 
+        {
+            _context.Remove(studio);
+            return Save();
+        }
+
         public bool Save()
         {
            var saved = _context.SaveChanges();

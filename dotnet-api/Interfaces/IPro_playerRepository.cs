@@ -14,8 +14,11 @@ namespace dotnet_api.Interfaces
 
         bool UpdatePro_Player(Pro_player pro_playerUpdate);
 
+        bool DeletePro_Player(Pro_player pro_Player);
+
         bool Save();
 
     }
+    
 
 }

@@ -18,6 +18,8 @@ namespace dotnet_api.Interfaces
 
         bool UpdatePlatform(int gameId, Platform Platform); 
 
+        bool DeletePlatform(Platform platform);
+
         bool Save();
 
     }

@@ -55,10 +55,18 @@ namespace dotnet_api.Repository
             return Save();
         }
 
+        public bool DeletePlatform(Platform platformToDelete)
+        {
+            _context.Remove(platformToDelete);
+            return Save();
+        }
+
         public bool Save()
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
+
+
     }
 }

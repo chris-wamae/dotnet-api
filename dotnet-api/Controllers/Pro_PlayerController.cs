@@ -153,7 +153,7 @@ namespace dotnet_api.Controllers
          if(!_proRepository.DeletePro_Player(proToDelete))
             {
 
-                ModelState.AddModelError("", "Something went wrong while saving");
+                ModelState.AddModelError("", "Something went wrong while deleting the Studio");
 
                 return StatusCode(500, ModelState);
 

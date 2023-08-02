@@ -138,6 +138,34 @@ namespace dotnet_api.Controllers
             return Ok(platformMap);
         }
 
+        [HttpDelete("{platformId}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+
+        public IActionResult DeletePlatform(int platformId)
+        {
+            if (!_platformRepository.PlatformExists(platformId))
+            {
+                return NotFound();
+            }
+
+            var platformToDelete = _platformRepository.GetPlatformById(platformId);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (!_platformRepository.DeletePlatform(platformToDelete))
+            {
+                ModelState.AddModelError("", "Something went wrong while deleting the Platform");
+
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+
+        }
 
     }
 }

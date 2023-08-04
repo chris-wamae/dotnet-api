@@ -1,9 +1,10 @@
 ﻿using dotnet_api.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_api.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<ApiUser>
     {
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
@@ -21,6 +22,8 @@ namespace dotnet_api.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<GamePlatform>()
                 .HasKey(pc => new { pc.GameId, pc.PlatformId });
 

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using dotnet_api.Repository;
 using dotnet_api.Interfaces;
 using System.Text.Json.Serialization;
+using dotnet_api.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,11 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
+
+
 
 var app = builder.Build();
 

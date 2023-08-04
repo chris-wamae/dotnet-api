@@ -38,7 +38,6 @@ namespace dotnet_api.Data
                 .HasForeignKey(c => c.PlatformId);
 
 
-
         }
 
 

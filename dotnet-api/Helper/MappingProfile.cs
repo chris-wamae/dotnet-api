@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using dotnet_api.Data;
 using dotnet_api.Dto;
 using dotnet_api.Models;
 
@@ -16,6 +17,7 @@ namespace dotnet_api.Helper
             CreateMap<PlatformDto, Platform>();
             CreateMap<Pro_playerDto, Pro_player>();
             CreateMap<GameDto,Game>();
+            CreateMap<ApiUser, UserDto>().ReverseMap();
         }
 
     }

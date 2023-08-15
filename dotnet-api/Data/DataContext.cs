@@ -1,4 +1,5 @@
-﻿using dotnet_api.Models;
+﻿using dotnet_api.Configurations;
+using dotnet_api.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +24,8 @@ namespace dotnet_api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
 
             modelBuilder.Entity<GamePlatform>()
                 .HasKey(pc => new { pc.GameId, pc.PlatformId });

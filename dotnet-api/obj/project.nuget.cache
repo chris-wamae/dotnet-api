@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/o/wMOtXuS4pSF0Bq9FnJT+xdYSstjTEBA4EKLNvXh9iYERllSR924RWP3NXQ1Vv6B0xFtpDAX39mq6/qgdRg==",
+  "dgSpecHash": "9P36rxuri2F4Iix6SnIjHy/NTgzkilcvNfNl3yb3fpSbl6L1OKUuiysJvZqbxH5G+Tsnli7+2M/lo0Jpi0/b2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\development\\dotnet-api\\dotnet-api\\dotnet-api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.0.nupkg.sha512",

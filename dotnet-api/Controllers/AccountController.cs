@@ -12,19 +12,18 @@ namespace dotnet_api.Controllers
     public class AccountController : ControllerBase
     {
         private readonly UserManager<ApiUser> _userManager;
-        private readonly SignInManager<ApiUser> _signInManager;
         private readonly ILogger<AccountController> _logger;
         private readonly IMapper _mapper;
 
-        public AccountController(UserManager<ApiUser> userManager, SignInManager<ApiUser> signInManager, ILogger<AccountController> logger, IMapper mapper)
+        public AccountController(UserManager<ApiUser> userManager, ILogger<AccountController> logger, IMapper mapper)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
             _logger = logger;
             _mapper = mapper;
         }
 
         [HttpPost]
+        [Route("register")]
      public async Task<IActionResult> Register([FromBody] UserDto userDto)
         {
             _logger.LogInformation($"Registration attempt for {userDto.Email}");
@@ -37,11 +36,22 @@ namespace dotnet_api.Controllers
             try
             {
                 var  user = _mapper.Map<ApiUser>(userDto);
-                var result = await _userManager.CreateAsync(user);
+                user.UserName = userDto.Email;
+                var result = await _userManager.CreateAsync(user,userDto.Password);
+
                 if(!result.Succeeded)
-                {
-                    return BadRequest("User registation attempt failed");
+                {   
+
+                    foreach(var error in result.Errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+
+                    return BadRequest(ModelState);
                 }
+
+                await _userManager.AddToRolesAsync(user, userDto.Roles);
+                return Accepted();
             }
 
             catch (Exception ex)
@@ -54,5 +64,32 @@ namespace dotnet_api.Controllers
 
 
         }
+
+        //[HttpPost]
+        //[Route("login")]
+     //public async Task<IActionResult> Login([FromBody] LoginUserDto userDto)
+     //   {
+     //       _logger.LogInformation($"Login Attempt for {userDto.Email}");
+     //       if(!ModelState.IsValid) 
+     //       {
+     //           return BadRequest(ModelState);
+     //       }
+     //       try
+     //       {
+     //           var result = await _signInManager.PasswordSignInAsync(userDto.Email, userDto.Password, false, false);
+     //           if(!result.Succeeded)
+     //           {
+     //               return Unauthorized(userDto);
+     //           }
+
+     //           return Accepted();
+     //       }
+
+     //       catch(Exception ex) 
+     //       {
+     //           _logger.LogError(ex, $"Something went wrong in the {nameof(Login)}");
+     //           return Problem($"Something went wrong in the name of {nameof(Login)}", statusCode: 500);
+     //       }
+     //   }
     }
 }

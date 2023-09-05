@@ -37,8 +37,10 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
+builder.Services.AddHealthChecks();
 
 var app = builder.Build();
+app.MapHealthChecks("/health");
 
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
     SeedData(app);

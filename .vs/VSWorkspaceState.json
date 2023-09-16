@@ -1,9 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\dotnet-api",
-    "\\dotnet-api\\ServiceExtensions"
+    ""
   ],
-  "SelectedNode": "\\.env",
   "PreviewInSolutionExplorer": false
 }

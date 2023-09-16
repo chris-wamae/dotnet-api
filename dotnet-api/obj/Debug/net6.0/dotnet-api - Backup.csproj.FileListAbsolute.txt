@@ -1,0 +1,98 @@
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\appsettings.json
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\dotnet-api - Backup.exe
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\dotnet-api - Backup.deps.json
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\dotnet-api - Backup.runtimeconfig.json
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\dotnet-api - Backup.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\dotnet-api - Backup.pdb
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.csproj.AssemblyReference.cache
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.AssemblyInfoInputs.cache
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.AssemblyInfo.cs
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.csproj.CoreCompileInputs.cache
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets\msbuild.dotnet-api - Backup.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets\msbuild.build.dotnet-api - Backup.props
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.dotnet-api - Backup.props
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.dotnet-api - Backup.props
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\scopedcss\bundle\dotnet-api - Backup.styles.css
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.csproj.CopyComplete
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\refint\dotnet-api - Backup.dll
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.pdb
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\dotnet-api - Backup.genruntimeconfig.cache
+C:\Users\chris\development\dotnet-api\dotnet-api\obj\Debug\net6.0\ref\dotnet-api - Backup.dll

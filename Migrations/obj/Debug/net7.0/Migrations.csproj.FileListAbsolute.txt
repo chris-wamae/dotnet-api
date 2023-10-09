@@ -1,0 +1,14 @@
+C:\Users\chris\development\dotnet-api\Migrations\bin\Debug\net7.0\Migrations.exe
+C:\Users\chris\development\dotnet-api\Migrations\bin\Debug\net7.0\Migrations.deps.json
+C:\Users\chris\development\dotnet-api\Migrations\bin\Debug\net7.0\Migrations.runtimeconfig.json
+C:\Users\chris\development\dotnet-api\Migrations\bin\Debug\net7.0\Migrations.dll
+C:\Users\chris\development\dotnet-api\Migrations\bin\Debug\net7.0\Migrations.pdb
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.AssemblyInfoInputs.cache
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.AssemblyInfo.cs
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.csproj.CoreCompileInputs.cache
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.dll
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\refint\Migrations.dll
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.pdb
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\Migrations.genruntimeconfig.cache
+C:\Users\chris\development\dotnet-api\Migrations\obj\Debug\net7.0\ref\Migrations.dll
